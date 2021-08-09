@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            "use strict"
+            
+            let numberRange = prompt("Input number range", '');
+
+            for(let i = 2; i <= numberRange; i++){
+                for(let j = 1; j < i; j++){
+                    if(j == 1){
+                        continue;
+                    }
+                    else if(i%j == 0) {
+                        break;
+                    }
+
+                    if(j == (i - 1)){
+                        alert(i);
+                    }
+                }
+            }
+            
+        </script>
+    </body>
+<html>

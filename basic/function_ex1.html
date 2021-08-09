@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            "use strict"
+
+            function checkAge(age) {
+                return (age > 18) ? true : confirm('보호자의 동의를 받으셨나요?');
+            }
+
+            function checkAge2(age) {
+                return (age > 18) || confirm("보호자의 동의를 받으셨나요?");
+            }
+
+            alert(checkAge(19)); //true
+            alert(checkAge(17)); //confirm
+
+            alert(checkAge2(19)); //true
+            alert(checkAge2(17)); //confirm
+        </script>
+    </body>
+<html>
